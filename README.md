@@ -1,5 +1,5 @@
-<div align="center">
-  <img src="assets/banner-gleider.png" alt="Banner profesional de Gleider Stiben Manco Arango" width="100%">
+ <div align="center">
+  <img src="./banner-gleider.png" alt="Banner profesional de Gleider Manco Arango" width="100%">
 </div>
 
 <h1 align="center">Hola, soy Gleider Stiben Manco Arango 👋</h1>
