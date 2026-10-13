@@ -1,4 +1,6 @@
-
+<div align="center">
+  <img src="assets/banner-gleider.png" width="100%" alt="Banner de Gleider Manco Arango">
+</div>
 
 <div align="center">
   <img src="assets/banner-gleider.png" alt="Banner profesional de Gleider Stiben Manco Arango" width="100%">
