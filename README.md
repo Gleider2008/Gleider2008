@@ -113,3 +113,10 @@ Continuar desarrollando mis habilidades técnicas, participar en proyectos que m
 <p align="center">
   <a href="https://github.com/TU-USUARIO">Mi perfil de GitHub</a>
 </p>
+
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Gleider2008&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&locale=es" alt="Estadísticas de GitHub" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gleider2008&layout=compact&theme=tokyonight&hide_border=true&locale=es" alt="Lenguajes más utilizados" height="180"/>
+</p>
+<p align="center"> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gleider2008&theme=tokyonight&hide_border=true&locale=es" alt="Racha de contribuciones de GitHub"/> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=Gleider2008&style=for-the-badge&color=blueviolet" alt="Visitas al perfil"/> </p>
+
