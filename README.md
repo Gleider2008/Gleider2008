@@ -77,7 +77,6 @@ Proyecto académico enfocado en apoyar procesos de ventas, pagos, transferencias
 - Organización de procesos de validación de pagos.
 - Diseño de módulos relacionados con inventario y contabilidad.
 
-**Repositorio:** [Agregar enlace al repositorio](https://github.com/TU-USUARIO)
 
 ### 🗄️ Prácticas de bases de datos — SmartMarket y Tienda de Ropa
 
@@ -86,8 +85,6 @@ Ejercicios académicos para practicar el diseño y la consulta de bases de datos
 - Creación de tablas, relaciones y restricciones.
 - Consultas SQL, filtros, agrupaciones y combinaciones.
 - Funciones, procedimientos, triggers y control de inventario.
-
-**Repositorio:** [Agregar enlace al repositorio](https://github.com/TU-USUARIO)
 
 ---
 
