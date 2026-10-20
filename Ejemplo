@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7d315a">
+  <meta name="description" content="Lili Stilo Spa: belleza, cuidado y bienestar en un solo lugar. Reserva tu cita.">
+  <title>Lili Stilo Spa | Belleza & Bienestar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--rose:#b85f83;--rose-dark:#7d315a;--pink:#f8e7ee;--blush:#fff7fa;--cream:#fffdfb;--ink:#33232c;--muted:#806d77;--line:#f0dce5;--white:#fff;--shadow:0 18px 55px #71304b18}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.container{width:min(1140px,calc(100% - 40px));margin:auto}
+    .announcement{background:var(--rose-dark);color:#fff;text-align:center;padding:9px 16px;font-size:.82rem;letter-spacing:.04em}
+    header{position:sticky;top:0;z-index:20;background:#fffdfbeF;backdrop-filter:blur(14px);border-bottom:1px solid #f0dce5}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#d58ca7,#7d315a);font-family:"Playfair Display",serif;font-size:1.25rem;box-shadow:0 7px 18px #b85f8340}.brand-name{font-family:"Playfair Display",serif;font-size:1.25rem;font-weight:700;line-height:1.1}.brand-name small{display:block;font-family:"DM Sans",sans-serif;font-size:.62rem;letter-spacing:.23em;text-transform:uppercase;color:var(--rose);margin-top:4px}
+    .nav-links{display:flex;gap:27px;align-items:center;font-size:.9rem;color:#6c5661}.nav-links a:hover{color:var(--rose-dark)}.nav-actions{display:flex;gap:10px;align-items:center}.menu-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px}
+    .btn{border:0;display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 21px;font-weight:700;transition:transform .2s,box-shadow .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--rose-dark);color:#fff;box-shadow:0 10px 24px #7d315a28}.btn-primary:hover{background:#642447}.btn-soft{background:var(--pink);color:var(--rose-dark)}.btn-outline{border:1px solid #d8b5c4;color:var(--rose-dark);background:transparent}
+    .hero{padding:64px 0 72px;overflow:hidden;background:radial-gradient(circle at 80% 20%,#f6dce7 0,transparent 33%),linear-gradient(135deg,#fffafc,#fff5f8 55%,#fdf1f5)}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:55px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--rose-dark);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem}.eyebrow:before{content:"";width:27px;height:1px;background:var(--rose)}h1,h2,h3,p{margin-top:0}h1,h2,.serif{font-family:"Playfair Display",serif}h1{font-size:clamp(2.8rem,5.3vw,5rem);line-height:1.05;letter-spacing:-.04em;margin:20px 0}.accent{color:var(--rose)}.hero-copy{font-size:1.08rem;line-height:1.8;color:var(--muted);max-width:540px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 30px}.social-proof{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.85rem}.avatar-stack{display:flex;padding-left:5px}.avatar{width:30px;height:30px;border:2px solid #fff;border-radius:50%;margin-left:-6px;display:grid;place-items:center;background:#f0c6d7;font-size:.8rem}.stars{color:#c88742;letter-spacing:2px}.hero-visual{position:relative;min-height:475px}.hero-photo{position:absolute;inset:10px 30px 10px 30px;border-radius:48% 48% 24px 24px;overflow:hidden;box-shadow:var(--shadow);background:#f2d4e0}.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}.photo-shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,#49223566)}.floating-note{position:absolute;left:0;bottom:38px;background:#fff;padding:17px 20px;border-radius:18px;box-shadow:var(--shadow);max-width:205px}.floating-note strong{display:block;font-family:"Playfair Display",serif;font-size:1.2rem;margin:5px 0}.floating-note small{color:var(--muted)}.floating-badge{position:absolute;right:0;top:45px;width:112px;height:112px;border-radius:50%;background:#fff8fb;border:1px solid #e9c4d4;display:grid;place-items:center;text-align:center;color:var(--rose-dark);font-family:"Playfair Display",serif;transform:rotate(9deg);box-shadow:var(--shadow)}.floating-badge span{font-size:1.8rem;display:block}
+    .trust-strip{background:#fff;border-bottom:1px solid var(--line);border-top:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0;gap:20px}.trust-item{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--muted);font-size:.9rem}.trust-item b{display:block;color:var(--ink);font-size:.95rem}.trust-icon{width:42px;height:42px;border-radius:14px;background:var(--blush);display:grid;place-items:center;font-size:1.2rem}
+    section{padding:86px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.section-head h2{font-size:clamp(2.1rem,4vw,3.25rem);margin:14px 0}.section-head p{color:var(--muted);line-height:1.75}.service-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:25px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter-btn{border:1px solid var(--line);border-radius:999px;background:#fff;padding:9px 15px;color:var(--muted);font-size:.85rem}.filter-btn.active,.filter-btn:hover{background:var(--rose-dark);border-color:var(--rose-dark);color:#fff}.search-box{position:relative}.search-box input{width:230px;border:1px solid var(--line);border-radius:999px;padding:11px 15px 11px 38px;background:#fff;outline:none}.search-box input:focus{border-color:var(--rose)}.search-box span{position:absolute;left:14px;top:10px;color:var(--muted)}
+    .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.service-image{height:185px;overflow:hidden;background:var(--pink)}.service-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.service-card:hover .service-image img{transform:scale(1.06)}.service-content{padding:20px;display:flex;flex-direction:column;flex:1}.service-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:700}.service-content h3{font-family:"Playfair Display",serif;font-size:1.25rem;margin:8px 0}.service-content p{font-size:.88rem;line-height:1.65;color:var(--muted);margin-bottom:18px;flex:1}.service-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.service-price{font-weight:700;color:var(--rose-dark)}.text-btn{border:0;background:transparent;color:var(--rose-dark);font-weight:700;padding:7px 0}.empty-state{grid-column:1/-1;text-align:center;padding:35px;color:var(--muted)}
+    .about{background:var(--blush)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-visual{position:relative;padding:0 30px 30px 0}.about-visual img{display:block;width:100%;height:440px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow)}.about-stamp{position:absolute;right:0;bottom:0;background:#fff;border-radius:20px;padding:20px 24px;box-shadow:var(--shadow);text-align:center}.about-stamp b{display:block;font-family:"Playfair Display",serif;font-size:2rem;color:var(--rose-dark)}.about-copy h2{font-size:clamp(2.1rem,4vw,3.2rem);line-height:1.13;margin:15px 0 20px}.about-copy p{line-height:1.85;color:var(--muted)}.benefit-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}.benefit{display:flex;gap:10px;align-items:flex-start;font-size:.9rem}.check{flex:0 0 23px;height:23px;border-radius:50%;background:#f0d7e2;color:var(--rose-dark);display:grid;place-items:center;font-size:.75rem;font-weight:700}
+    .experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.experience-card{padding:28px;border:1px solid var(--line);border-radius:22px;background:#fff}.experience-card .big-icon{width:52px;height:52px;border-radius:17px;background:var(--pink);display:grid;place-items:center;font-size:1.4rem;margin-bottom:20px}.experience-card h3{font-family:"Playfair Display",serif;font-size:1.3rem}.experience-card p{color:var(--muted);font-size:.92rem;line-height:1.75;margin-bottom:0}
+    .booking{background:linear-gradient(135deg,#7d315a,#a64d75);color:#fff;position:relative;overflow:hidden}.booking:before,.booking:after{content:"";position:absolute;border:1px solid #ffffff28;border-radius:50%;width:390px;height:390px}.booking:before{top:-210px;right:-100px}.booking:after{bottom:-300px;left:-90px}.booking-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.booking h2{font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.1;margin:15px 0}.booking p{color:#f4dce7;line-height:1.8}.booking .eyebrow{color:#f5d6e3}.booking .eyebrow:before{background:#f5d6e3}.booking-perks{display:grid;gap:12px;margin-top:25px}.booking-perks div{display:flex;gap:10px;align-items:center}.booking-card{background:#fff;color:var(--ink);padding:28px;border-radius:24px;box-shadow:0 25px 60px #43152f40}.booking-card h3{font-family:"Playfair Display",serif;font-size:1.5rem;margin-bottom:6px}.booking-card>p{color:var(--muted);font-size:.88rem;margin-bottom:20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:13px}.field.full{grid-column:1/-1}.field label{font-size:.8rem;font-weight:700;color:#624a57}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:#fff;outline:none;color:var(--ink)}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rose);box-shadow:0 0 0 3px #b85f8318}.field textarea{resize:vertical;min-height:80px}.booking-card .btn{width:100%}.form-note{font-size:.75rem;color:var(--muted);line-height:1.5;margin:12px 0 0}.success-message{display:none;padding:12px 14px;border-radius:12px;background:#eaf7ee;color:#23683b;font-size:.88rem;margin-bottom:13px}
+    .testimonials{background:#fff9fb}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{padding:25px;border-radius:20px;border:1px solid var(--line);background:#fff}.review-stars{color:#c88742;letter-spacing:3px;margin-bottom:14px}.review blockquote{margin:0 0 20px;color:#6e5964;line-height:1.75;font-size:.94rem}.reviewer{display:flex;align-items:center;gap:11px}.reviewer-avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--pink);color:var(--rose-dark);font-weight:700}.reviewer b{display:block;font-size:.9rem}.reviewer small{color:var(--muted)}
+    .faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px}.faq-intro h2{font-size:2.6rem;line-height:1.12;margin:15px 0}.faq-intro p{color:var(--muted);line-height:1.8}.faq-item{border-bottom:1px solid var(--line)}.faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left;border:0;background:transparent;padding:20px 0;font-weight:700;color:var(--ink)}.faq-question span:last-child{color:var(--rose);font-size:1.3rem;transition:transform .2s}.faq-answer{display:none;color:var(--muted);line-height:1.75;padding:0 30px 18px 0;font-size:.92rem}.faq-item.open .faq-answer{display:block}.faq-item.open .faq-question span:last-child{transform:rotate(45deg)}
+    footer{background:#2e1b27;color:#f9eaf0;padding:45px 0 20px}.footer-main{display:flex;align-items:flex-start;justify-content:space-between;gap:35px;padding-bottom:35px}.footer-brand .brand-name{color:#fff}.footer-brand p{max-width:330px;color:#d0b9c4;line-height:1.7;margin-top:17px;font-size:.9rem}.footer-links h4{margin:0 0 14px}.footer-links a{display:block;color:#d0b9c4;margin:10px 0;font-size:.9rem}.footer-links a:hover{color:#fff}.footer-bottom{border-top:1px solid #ffffff20;padding-top:18px;display:flex;justify-content:space-between;gap:15px;color:#c6aebb;font-size:.8rem}
+    .toast{position:fixed;right:20px;bottom:20px;background:#2e1b27;color:#fff;padding:14px 18px;border-radius:14px;box-shadow:var(--shadow);z-index:60;opacity:0;transform:translateY(15px);pointer-events:none;transition:.25s;max-width:320px}.toast.show{opacity:1;transform:translateY(0)}
+    @media(max-width:950px){.hero-grid{gap:25px}.hero-visual{min-height:410px}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.booking-grid{gap:30px}.nav-links{gap:16px}}
+    @media(max-width:720px){.container{width:min(100% - 30px,540px)}.nav{height:68px}.nav-actions>.btn{display:none}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fffdfb;padding:20px 25px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid #f5e8ee}.nav-links a:last-child{border:0}.hero{padding:45px 0 55px}.hero-grid{grid-template-columns:1fr}.hero-copy{font-size:1rem}.hero-visual{min-height:370px;max-width:470px;width:100%;margin:0 auto}.hero-photo{inset:5px 25px 5px 25px}.floating-badge{width:90px;height:90px;font-size:.8rem}.floating-note{bottom:25px;max-width:180px;padding:13px 15px}.trust-grid{grid-template-columns:1fr;gap:14px;padding:20px 0}.trust-item{justify-content:flex-start}.trust-item br{display:none}section{padding:65px 0}.service-tools{align-items:stretch}.search-box input{width:100%}.search-box{width:100%}.service-grid{gap:12px}.service-image{height:145px}.service-content{padding:14px}.service-content h3{font-size:1.08rem}.service-content p{font-size:.82rem}.service-bottom{align-items:flex-start;flex-direction:column}.about-grid,.booking-grid,.faq-grid{grid-template-columns:1fr;gap:35px}.about-visual img{height:340px}.benefit-list{gap:12px}.experience-grid,.review-grid{grid-template-columns:1fr}.booking-card{padding:22px}.faq-intro h2{font-size:2.2rem}.footer-main{flex-wrap:wrap}.footer-links{min-width:120px}.footer-bottom{flex-direction:column}.section-head{margin-bottom:28px}}
+    @media(max-width:390px){.service-grid{grid-template-columns:1fr}.service-image{height:200px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero-buttons .btn{width:100%}.benefit-list{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <div class="announcement">✨ Tu momento de brillar comienza aquí · Agenda tu cita</div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Lili Stilo Spa, inicio">
+        <span class="brand-mark">L</span><span class="brand-name">Lili Stilo Spa<small>Belleza & bienestar</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#experiencia">Experiencia</a><a href="#preguntas">Preguntas</a>
+      </nav>
+      <div class="nav-actions"><a class="btn btn-primary" href="#reservar">Reservar cita <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Un espacio para ti</span>
+          <h1>Tu belleza merece un <span class="accent">momento especial.</span></h1>
+          <p class="hero-copy">Descubre una experiencia de cuidado personal pensada para que te sientas increíble por dentro y por fuera. Respira, relájate y deja que nosotras cuidemos de ti.</p>
+          <div class="hero-buttons"><a class="btn btn-primary" href="#reservar">Agendar mi cita <span>♡</span></a><a class="btn btn-outline" href="#servicios">Explorar servicios ↓</a></div>
+          <div class="social-proof"><div class="avatar-stack"><span class="avatar">🌸</span><span class="avatar">✨</span><span class="avatar">💗</span></div><div><span class="stars">★★★★★</span><br><span>Un espacio creado para consentirte</span></div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Interior de un salón de belleza luminoso" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#f0c5d6,#b85f83)'"><div class="photo-shade"></div></div>
+          <div class="floating-note"><span>♡ Un ratito para ti</span><strong>Te lo mereces</strong><small>Cuidado · Estilo · Confianza</small></div>
+          <div class="floating-badge"><div><span>✿</span>Tu mejor<br>versión</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip"><div class="container trust-grid">
+      <div class="trust-item"><span class="trust-icon">✿</span><div><b>Cuidado personalizado</b><span>Cada detalle cuenta</span></div></div>
+      <div class="trust-item"><span class="trust-icon">♡</span><div><b>Un ambiente acogedor</b><span>Tu bienestar es primero</span></div></div>
+      <div class="trust-item"><span class="trust-icon">✧</span><div><b>Estilo que te representa</b><span>Brilla a tu manera</span></div></div>
+    </div></div>
+
+    <section id="servicios">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Nuestros servicios</span><h2>Un toque de belleza, <span class="accent">mucho de ti.</span></h2><p>Encuentra el cuidado ideal para ti. Explora las categorías y elige ese servicio que te hará salir sonriendo.</p></div>
+        <div class="service-tools">
+          <div class="filters" id="filters" aria-label="Filtrar servicios">
+            <button class="filter-btn active" data-filter="todos">Todos</button><button class="filter-btn" data-filter="cabello">Cabello</button><button class="filter-btn" data-filter="unas">Uñas</button><button class="filter-btn" data-filter="estilo">Estilo</button><button class="filter-btn" data-filter="tratamientos">Tratamientos</button>
+          </div>
+          <label class="search-box"><span>⌕</span><input id="serviceSearch" type="search" placeholder="Buscar servicio..." aria-label="Buscar servicio"></label>
+        </div>
+        <div class="service-grid" id="serviceGrid">
+          <article class="service-card" data-category="cabello" data-name="coloración mechas tinte balayage">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1519699949860-3ec7e7a4e5a1?auto=format&fit=crop&w=700&q=80" alt="Cabello con color y brillo" loading="lazy"></div>
+            <div class="service-content"><span class="service-tag">Color & luz</span><h3>Coloración & Mechas</h3><p>Realza tu estilo con tonos que iluminan tu rostro y reflejan tu personalidad.</p><div class="service-bottom"><span class="service-price">Cotizar servicio</span><button class="text-btn book-service" data-service="Coloración & Mechas">Elegir ↗</button></div></div>
+          </article>
+          <article class="service-card" data-category="unas" data-name="manicure pedicure uñas esmaltado">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=80" alt="Manicure profesional" loading="lazy"></div>
+            <div class="service-content"><span class="service-tag">Detalles que enamoran</span><h3>Manicure & Pedicure</h3><p>Dedícales tiempo a tus manos y pies con un acabado limpio, delicado y hermoso.</p><div class="service-bottom"><span class="service-price">Cotizar servicio</span><button class="text-btn book-service" data-service="Manicure & Pedicure">Elegir ↗</button></div></div>
+          </article>
+          <article class="service-card" data-category="estilo" data-name="corte estilo peinado brushing">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Peinado y estilo de cabello" loading="lazy"></div>
+            <div class="service-content"><span class="service-tag">Tu estilo, tus reglas</span><h3>Corte & Estilo</h3><p>Un corte que te favorece y un look con el que te sientes auténticamente tú.</p><div class="service-bottom"><span class="service-price">Cotizar servicio</span><button class="text-btn book-service" data-service="Corte & Estilo">Elegir ↗</button></div></div>
+          </article>
+          <article class="service-card" data-category="tratamientos" data-name="tratamientos capilares hidratación reparación nutrición">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=700&q=80" alt="Cuidado capilar en salón de belleza" loading="lazy"></div>
+            <div class="service-content"><span class="service-tag">Pausa reparadora</span><h3>Tratamientos Capilares</h3><p>Nutrición e hidratación para consentir tu cabello y recuperar su suavidad.</p><div class="service-bottom"><span class="service-price">Cotizar servicio</span><button class="text-btn book-service" data-service="Tratamientos Capilares">Elegir ↗</button></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-visual"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85" alt="Espacio profesional de belleza" loading="lazy"><div class="about-stamp"><b>♡</b><span>Tu bienestar<br>nos inspira</span></div></div>
+        <div class="about-copy"><span class="eyebrow">Conoce Lili Stilo Spa</span><h2>Más que belleza, un espacio para <span class="accent">sentirte bien.</span></h2><p>Creemos que cuidar de ti no es un lujo: es una forma de recordarte lo valiosa que eres. Queremos que cada visita sea una pausa de tu rutina, con atención cercana y detalles que marcan la diferencia.</p><p>Escuchamos lo que buscas, te orientamos y te acompañamos para que el resultado vaya contigo y con tu estilo.</p>
+          <div class="benefit-list"><div class="benefit"><span class="check">✓</span><span>Atención cercana</span></div><div class="benefit"><span class="check">✓</span><span>Asesoría personalizada</span></div><div class="benefit"><span class="check">✓</span><span>Ambiente relajante</span></div><div class="benefit"><span class="check">✓</span><span>Detalles con cariño</span></div></div>
+          <a class="btn btn-primary" href="#reservar">Quiero vivir la experiencia ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="container"><div class="section-head"><span class="eyebrow">Tu visita, a tu manera</span><h2>Pequeños detalles, <span class="accent">gran experiencia.</span></h2><p>Queremos que disfrutes todo el proceso, desde la primera consulta hasta el momento en que ves tu nuevo look.</p></div>
+        <div class="experience-grid">
+          <article class="experience-card"><div class="big-icon">💬</div><h3>1. Nos cuentas</h3><p>Cuéntanos qué tienes en mente. Te ayudaremos a encontrar el servicio que mejor se adapte a ti.</p></article>
+          <article class="experience-card"><div class="big-icon">🌷</div><h3>2. Te consentimos</h3><p>Disfruta un momento para desconectarte de la rutina mientras cuidamos cada detalle.</p></article>
+          <article class="experience-card"><div class="big-icon">✨</div><h3>3. Sales brillando</h3><p>Termina tu visita sintiéndote renovada, segura y lista para mostrar tu estilo al mundo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="reservar">
+      <div class="container booking-grid">
+        <div><span class="eyebrow">Tu próximo momento favorito</span><h2>¿Lista para regalarte un momento?</h2><p>Déjanos tus datos y la cita que tienes en mente. Te mostraremos una confirmación para que puedas continuar el contacto con el spa.</p><div class="booking-perks"><div><span>♡</span> Atención pensada para ti</div><div><span>✧</span> Elige el servicio que deseas</div><div><span>🌸</span> Un nuevo momento de bienestar</div></div></div>
+        <div class="booking-card"><h3>Solicita tu cita</h3><p>Completa este formulario para enviar tu solicitud.</p>
+          <div class="success-message" id="successMessage" role="status"></div>
+          <form name="solicitud-cita" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="bookingForm">
+            <input type="hidden" name="form-name" value="solicitud-cita">
+            <p style="display:none"><label>No completar: <input name="bot-field"></label></p>
+            <div class="form-grid">
+              <div class="field"><label for="name">Tu nombre *</label><input id="name" name="nombre" autocomplete="name" placeholder="Nombre completo" required></div>
+              <div class="field"><label for="phone">Teléfono *</label><input id="phone" name="telefono" type="tel" autocomplete="tel" placeholder="Tu número" required></div>
+              <div class="field"><label for="service">Servicio *</label><select id="service" name="servicio" required><option value="">Selecciona uno</option><option>Coloración & Mechas</option><option>Manicure & Pedicure</option><option>Corte & Estilo</option><option>Tratamientos Capilares</option><option>Quiero asesoría</option></select></div>
+              <div class="field"><label for="date">Fecha preferida *</label><input id="date" name="fecha" type="date" required></div>
+              <div class="field full"><label for="message">¿Algo más que debamos saber?</label><textarea id="message" name="mensaje" placeholder="Cuéntanos tu idea o el horario que prefieres..."></textarea></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar solicitud de cita <span>♡</span></button>
+            <p class="form-note">Al enviar, solicitas una cita; el horario queda pendiente de confirmación por parte del spa. En Netlify puedes ver los envíos en la sección Forms después de desplegar.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container"><div class="section-head"><span class="eyebrow">Palabras bonitas</span><h2>La belleza también está en <span class="accent">cómo te sientes.</span></h2><p>Un buen servicio se recuerda por el resultado y por la manera en que te hicieron sentir.</p></div>
+        <div class="review-grid">
+          <article class="review"><div class="review-stars">★★★★★</div><blockquote>“Me encanta la idea de tener un lugar donde puedo dedicarme tiempo y salir sintiéndome renovada.”</blockquote><div class="reviewer"><div class="reviewer-avatar">M</div><div><b>Mariana</b><small>Experiencia de belleza</small></div></div></article>
+          <article class="review"><div class="review-stars">★★★★★</div><blockquote>“Lo mejor es poder explicar lo que quiero y recibir orientación para encontrar un estilo que vaya conmigo.”</blockquote><div class="reviewer"><div class="reviewer-avatar">V</div><div><b>Valentina</b><small>Cuidado personalizado</small></div></div></article>
+          <article class="review"><div class="review-stars">★★★★★</div><blockquote>“Un momento para desconectarme de todo y volver a mi rutina con más confianza y energía.”</blockquote><div class="reviewer"><div class="reviewer-avatar">C</div><div><b>Camila</b><small>Momento para ella</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas"><div class="container faq-grid">
+      <div class="faq-intro"><span class="eyebrow">¿Tienes dudas?</span><h2>Te ayudamos a resolverlas.</h2><p>Si no encuentras la respuesta que buscas, puedes dejar tu pregunta en la solicitud de cita.</p><a class="btn btn-soft" href="#reservar">Consultar sobre una cita ↗</a></div>
+      <div class="faq-list">
+        <div class="faq-item open"><button class="faq-question" aria-expanded="true"><span>¿Cómo puedo reservar una cita?</span><span>＋</span></button><div class="faq-answer">Completa el formulario de esta página con tus datos, el servicio y la fecha que prefieres. La solicitud debe ser confirmada por el spa.</div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Puedo preguntar por un servicio antes de reservar?</span><span>＋</span></button><div class="faq-answer">¡Claro! Selecciona “Quiero asesoría” en el formulario y cuéntanos qué te gustaría hacer para que podamos orientarte.</div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Los precios aparecen en la página?</span><span>＋</span></button><div class="faq-answer">Por ahora los servicios se muestran como opciones para cotizar. El valor puede variar según el trabajo que necesites; solicita una cotización antes de confirmar.</div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Qué pasa después de enviar el formulario?</span><span>＋</span></button><div class="faq-answer">Si el sitio ya está publicado en Netlify y los formularios están habilitados, la solicitud queda disponible en la sección Forms del panel de Netlify. Recuerda revisar las solicitudes y confirmar la cita con la clienta.</div></div>
+      </div>
+    </div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-main">
+    <div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-mark">L</span><span class="brand-name">Lili Stilo Spa<small>Belleza & bienestar</small></span></a><p>Un espacio para cuidar de ti, celebrar tu estilo y recordarte que mereces sentirte bien.</p></div>
+    <div class="footer-links"><h4>Explora</h4><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#experiencia">Experiencia</a></div>
+    <div class="footer-links"><h4>Estamos aquí</h4><a href="#reservar">Solicitar una cita</a><a href="#preguntas">Preguntas frecuentes</a><a href="#inicio">Volver arriba ↑</a></div>
+  </div><div class="footer-bottom"><span>© <span id="year"></span> Lili Stilo Spa. Todos los derechos reservados.</span><span>Hecho con ♡ para celebrar tu belleza.</span></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); menuToggle.textContent='☰';
+    }));
+
+    let activeFilter = 'todos';
+    const cards = [...document.querySelectorAll('.service-card')];
+    const search = document.getElementById('serviceSearch');
+    function filterServices() {
+      const query = search.value.trim().toLocaleLowerCase('es');
+      let visible = 0;
+      cards.forEach(card => {
+        const categoryMatch = activeFilter === 'todos' || card.dataset.category === activeFilter;
+        const textMatch = (card.dataset.name + ' ' + card.innerText).toLocaleLowerCase('es').includes(query);
+        card.hidden = !(categoryMatch && textMatch);
+        if (!card.hidden) visible++;
+      });
+      let empty = document.querySelector('.empty-state');
+      if (!visible && !empty) {
+        empty = document.createElement('div'); empty.className='empty-state'; empty.textContent='No encontramos servicios con esa búsqueda. Prueba otra palabra.'; document.getElementById('serviceGrid').appendChild(empty);
+      } else if (visible && empty) empty.remove();
+    }
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active'); activeFilter = btn.dataset.filter; filterServices();
+    }));
+    search.addEventListener('input', filterServices);
+
+    const dateInput = document.getElementById('date');
+    const localToday = new Date();
+    dateInput.min = `${localToday.getFullYear()}-${String(localToday.getMonth()+1).padStart(2,'0')}-${String(localToday.getDate()).padStart(2,'0')}`;
+
+    document.querySelectorAll('.book-service').forEach(btn => btn.addEventListener('click', () => {
+      document.getElementById('service').value = btn.dataset.service;
+      document.getElementById('reservar').scrollIntoView({behavior:'smooth'});
+      setTimeout(() => document.getElementById('name').focus({preventScroll:true}), 550);
+      showToast(`Elegiste: ${btn.dataset.service}. Completa tus datos para solicitar la cita.`);
+    }));
+
+    document.querySelectorAll('.faq-question').forEach(btn => btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+    }));
+
+    const form = document.getElementById('bookingForm');
+    form.addEventListener('submit', (event) => {
+      // Netlify procesa el formulario publicado; en la vista local mostramos una demostración.
+      if (location.protocol === 'file:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        event.preventDefault();
+        const data = new FormData(form);
+        const name = (data.get('nombre') || '').trim();
+        const service = data.get('servicio');
+        if (!name || !service || !data.get('telefono') || !data.get('fecha')) return;
+        const success = document.getElementById('successMessage');
+        success.textContent = `¡Gracias, ${name}! Tu solicitud de ${service} está lista en esta demostración. Al publicar el sitio en Netlify, los envíos se podrán recibir desde el panel Forms.`;
+        success.style.display = 'block';
+        form.reset(); dateInput.min = `${localToday.getFullYear()}-${String(localToday.getMonth()+1).padStart(2,'0')}-${String(localToday.getDate()).padStart(2,'0')}`;
+        success.scrollIntoView({behavior:'smooth',block:'nearest'});
+      }
+    });
+
+    let toastTimer;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message; toast.classList.add('show');
+      clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('show'), 3500);
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
